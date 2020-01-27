@@ -100,4 +100,6 @@ modifications.
 9. Following the training step you predict your data using folllwing command 
   !python run_classifier.py --task_name=cola --do_predict=true --data_dir=./data --vocab_file=./model/vocab.txt --bert_config_file=./model/bert_config.json --init_checkpoint=./bert_output/model.ckpt-4983 --max_seq_length=64 --output_dir=./bert_output/
 10. Above command will create a file called test_results.tsv inside bert_output folder which can be combined with test data using guid.
-Happy Fine tuning...
+
+
+##Happy Fine tuning...
