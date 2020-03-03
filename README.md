@@ -93,7 +93,7 @@ modifications.
 2. Change folder names as needed
 3. clone https://github.com/google-research/bert.git
 4. Get Pretrained cased_L-12_H-768_A-12 using !wget https://storage.googleapis.com/bert_models/2018_10_18/cased_L-12_H-768_A-12.zip
-5. Crea'te bert_output and data folder inside the cloned repository
+5. Create bert_output and data folder inside the cloned repository
 6. Inside Data folder save the dataset of in tsv format after splitting them as train.tsv, dev.tsv and val.tsv
 7. Run !python run_classifier.py --task_name=cola --do_train=true --do_eval=true --data_dir=./data --vocab_file=./model/vocab.txt --bert_config_file=./model/bert_config.json --init_checkpoint=./model/bert_model.ckpt --max_seq_length=64 --train_batch_size=2 --learning_rate=2e-5 --num_train_epochs=3.0 --output_dir=./bert_output/ --do_lower_case=False --save_checkpoints_steps 10000"
 8. Inside output folder you could see eval_results.txt file which contains model evaluation results
